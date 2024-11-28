@@ -193,6 +193,8 @@ public partial class Program
     {
         StartTask("6.3");
 
+        Console.WriteLine("Сейчас мы сгенерируем температуру на Марсе!");
+
         double[,] temperature = new double[12, 30];
 
         double[] newArray = MediunTemp(temperature);
@@ -286,6 +288,8 @@ public partial class Program
     {
         StartTask("6.3");
 
+        Console.WriteLine("Давайте сгенерируем температуру на Марсе 2 раз!");
+
         double[,] temperature = new double[12, 30];
 
         double[] newArray = MediunTemp(temperature);
@@ -314,6 +318,8 @@ public partial class Program
         {
             sesons.Add(kvp1.Key, newArray[kvp1.Value]);
         }
+
+        Console.WriteLine("Выведем всю температуру за год!");
 
         foreach (var kvp2 in sesons)
         {
